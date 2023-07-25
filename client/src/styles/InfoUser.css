@@ -1,0 +1,32 @@
+.info-user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.info-user .button-box {
+  width: 80px;
+  height: 30px;
+  border: none;
+}
+
+.button-box button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background:  #852525;
+  margin: auto;
+  cursor: pointer;
+}

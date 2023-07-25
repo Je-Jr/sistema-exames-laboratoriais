@@ -1,0 +1,14 @@
+.container-tela-inicial {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(135deg, #7fffd4, #2b9c76);
+  margin-left: 200px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  
+}

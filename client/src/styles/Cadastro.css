@@ -1,0 +1,96 @@
+.full-screen-components {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.form-container {
+  display: flex;
+  margin-left: 200px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, #7fffd4, #2b9c76);
+  padding: 10px;
+}
+
+.formulario-cadastro {
+  max-width: 800px;
+  width: 70%;
+  background: whitesmoke;
+  padding: 25px 30px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.formulario-cadastro .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.formulario-cadastro .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #7fffd4, #2b9c76);
+}
+
+.formulario-cadastro form .patient-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .patient-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.patient-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.patient-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.patient-details .input-box input:focus,
+.patient-details .input-box input:valid {
+  border-color: #2b9c76;
+}
+
+form .button {
+  height: 45px;
+  margin: 40px 0;
+}
+
+form .button button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #7fffd4, #2b9c76);
+}
+
+form .button button:hover {
+  background: linear-gradient(135deg, #5bb396, #2c9572);
+}

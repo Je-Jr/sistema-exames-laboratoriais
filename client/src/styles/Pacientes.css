@@ -1,0 +1,109 @@
+.full-screen-components {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.background-patients-list {
+  display: flex;
+  margin-left: 200px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, #7fffd4, #2b9c76);
+  padding: 10px;
+}
+
+.box-patients-list {
+  max-width: 1000px;
+  min-width: 700px;
+  width: 100%;
+  height: 80%;
+  background: whitesmoke;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.box-patients-list .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.box-patients-list .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #7fffd4, #2b9c76);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.container-header .button {
+  width: 200px;
+  height: 30px;
+  border: none;
+}
+
+.container-header .button p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background:  #2b9c76;
+  margin: auto;
+  cursor: pointer;
+}
+
+.container-header .button p:hover {
+  background: #62c7a5;
+}
+
+
+.table-patients {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-patients th,
+.table-patients td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.edit-button {
+  font-size: 1.1rem;
+  color: #134434;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  display: inline;
+  text-align: center;
+  padding: 4px 4px 0 4px;
+  font-size: 1.3rem;
+  color: #134434;
+  cursor: pointer;
+}

@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/Form.css'
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Login = () => {
+  const navigate = useNavigate();
   const [user, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -11,20 +15,23 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:3001/login', {user, password });
+      const response = await axios.post('http://localhost:3001/auth', {user, password });
+      const { token, redirectUrl } = response.data;
       alert('Login realizado com sucesso!');
       setUsername('');
       setPassword('');
+      navigate(redirectUrl);
+      localStorage.setItem('token', token);
     } catch (error) {
-      console.error(error);
-      alert('Ocorreu um erro ao fazer login.');
+      const errorMessage = error.response.data.error;
+      alert(errorMessage);
     }
   };  
 
   return (
     <div className='login-container'>
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <form className='form-auth' onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Username"
