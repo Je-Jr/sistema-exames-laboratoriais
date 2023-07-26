@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Dashboard.css';
 import { Link } from 'react-router-dom';
-import { FiUser, FiHome } from 'react-icons/fi';
+import { FiUser, FiHome, FiFileText } from 'react-icons/fi';
 
 const Dashboard = () => {
   return (
@@ -15,6 +15,10 @@ const Dashboard = () => {
           <li>
             <FiUser />
             <Link to={'/pacientes'}>Pacientes</Link>
+          </li>
+          <li>
+            <FiFileText />
+            <Link to={'/exames'}>Exames</Link>
           </li>
         </ul>
       </aside>

@@ -19,7 +19,7 @@ function CadastroPaciente() {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.post('http://localhost:3001/pacientes/cadastro', {
-        nomeCompleto,
+        nomeCompleto, 
         cpf,
         dataNascimento,
         contato,
